@@ -1,6 +1,4 @@
-### 2020.6.12
-
-#### [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)<easy>
+#### 1. [160. 相交链表](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)[easy]
 
 > 编写一个程序，找到两个单链表相交的起始节点。
 >
@@ -103,7 +101,7 @@ public:
 };
 ```
 
-#### [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)<easy>
+#### 2. [206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)<easy>
 
 > 反转一个单链表。
 >
@@ -154,9 +152,7 @@ public:
 };
 ```
 
-
-
-#### [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)<easy>
+#### 3. [21. 合并两个有序链表](https://leetcode-cn.com/problems/merge-two-sorted-lists/)[easy]
 
 > 将两个升序链表合并为一个新的 **升序** 链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
 >
@@ -205,7 +201,7 @@ public:
 };
 ```
 
-#### [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)<easy>
+#### 4. [83. 删除排序链表中的重复元素](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)[easy]
 
 > 给定一个排序链表，删除所有重复的元素，使得每个元素只出现一次。
 >
@@ -245,7 +241,7 @@ public:
 };
 ```
 
-#### [19. 删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)<medium>
+#### 5. [19. 删除链表的倒数第N个节点](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)[medium]
 
 > 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
 >
@@ -293,17 +289,15 @@ public:
 };
 ```
 
-### 2020.06.13
 
-#### [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)<medium>
+
+#### 6. [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)[medium]
 
 > 给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
 >
 > 你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
 >
->  
->
-> 示例:
+>  示例:
 >
 > 给定 1->2->3->4, 你应该返回 2->1->4->3.。
 >
@@ -360,26 +354,20 @@ public:
 };
 ```
 
-
-
-#### [445. 两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)<medium>
+#### 7. [445. 两数相加 II](https://leetcode-cn.com/problems/add-two-numbers-ii/)[medium]
 
 > 给你两个 非空 链表来代表两个非负整数。数字最高位位于链表开始位置。它们的每个节点只存储一位数字。将这两数相加会返回一个新的链表。
 >
 > 你可以假设除了数字 0 之外，这两个数字都不会以零开头。
 >
->  
->
-> 进阶：
+>  进阶：
 >
 > 如果输入链表不能修改该如何处理？换句话说，你不能对列表中的节点进行翻转。
 >
->  
->
 > 示例：
 >
-> 输入：(7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
-> 输出：7 -> 8 -> 0 -> 7
+>  输入：(7 -> 2 -> 4 -> 3) + (5 -> 6 -> 4)
+>输出：7 -> 8 -> 0 -> 7
 
 解法一：将链表逆转再求和
 
@@ -518,7 +506,7 @@ public:
 };
 ```
 
-柳解法
+柳神解法：
 
 ```c++
 class Solution {
@@ -561,9 +549,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 };
 ```
 
-
-
-#### [234. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)<easy>
+#### 8. [234. 回文链表](https://leetcode-cn.com/problems/palindrome-linked-list/)<easy>
 
 > 请判断一个链表是否为回文链表。
 >
@@ -653,7 +639,7 @@ public:
 };
 ```
 
-#### [725. 分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/)<medium>
+#### 9. [725. 分隔链表](https://leetcode-cn.com/problems/split-linked-list-in-parts/)<medium>
 
 > 给定一个头结点为 root 的链表, 编写一个函数以将链表分隔为 k 个连续的部分。
 >
@@ -743,9 +729,7 @@ public:
 };
 ```
 
-
-
-#### [328. 奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)<medium>
+#### 10. [328. 奇偶链表](https://leetcode-cn.com/problems/odd-even-linked-list/)<medium>
 
 > 给定一个单链表，把所有的奇数节点和偶数节点分别排在一起。请注意，这里的奇数节点和偶数节点指的是节点编号的奇偶性，而不是节点的值的奇偶性。
 >
@@ -763,8 +747,6 @@ public:
 >
 > 应当保持奇数节点和偶数节点的相对顺序。
 > 链表的第一个节点视为奇数节点，第二个节点视为偶数节点，以此类推。
-
-
 
 ```c++
 class Solution {
