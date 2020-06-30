@@ -395,7 +395,7 @@ public:
 
 来自柳神的分析：
 
-> 分析:二叉搜索树的中序遍历的结果恰好是所有数的递增序列列，根据中序遍历结果，对于当前遍历结 点，标记maxCount为最⼤大出现次数，tempCount为当前数字出现的次数，currentVal为当前保存的 值。 ⾸首先，tempCount++表示当前的数字出现次数+1，如果当前结点的值不不等于保存的值，就更更新 currentVal的值，并且将tempCount标记为1~ 接下来，如果tempCount即当前数字出现的次数⼤大于 maxCount，就更更新maxCount，并且将result数组清零，并将当前数字放⼊入result数组中;如果 tempCount只是等于maxCount，说明是出现次数⼀一样的，则将当前数字直接放⼊入result数组中~
+> 分析:⽤用栈解决，i从0~len-1，每次将栈顶元素⼩小于temperatures[i]的出栈，因为对于出栈的元素来 说它已经找到了了第⼀一个⼤大于它的值，剩余在栈中的都是未找到⼤大于它本身的值的元素，则继续等待下 ⼀一个temperatures[i]。每次将temperatures[i]压⼊入栈中，等待接下来遇到⽐比它⼤大的值时出栈~将i与 栈顶元素下标的差值保存在栈顶元素的下标所对应的ans中，最后返回ans即可~
 
 ```c++
 class Solution {
